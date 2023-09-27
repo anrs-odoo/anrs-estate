@@ -11,6 +11,7 @@
                         <field name="name"/>
                     <sheet/>
                 <form/>
+            </field>
         </record>
     </data>
 </odoo>
