@@ -8,9 +8,9 @@
             <field name="arch" type="xml">
                 <form string="Estate">
                     <sheet>
-                        <field name="name"/>
-                    <sheet/>
-                <form/>
+                        <field name="name"></field>
+                    </sheet>
+                </form>
             </field>
         </record>
     </data>
