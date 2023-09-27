@@ -5,7 +5,7 @@
             <field name="name">Properties</field>
             <field name="res_model">real_estate</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[|,('active','=',True),('active','=',False)]</field>
+            <field name="domain">["|", ("active", "=", True), ("active", "!=", True)]</field>
         </record>
     </data>
 </odoo>
