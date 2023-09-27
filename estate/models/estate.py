@@ -7,5 +7,5 @@ class Estate(models.Model):
 	name = fields.Char("Name", default="Unknown")
 	last_seen = fields.Datetime("Last Seen", default= lambda self: fields.Datetime.now())
 	bedrooms = fields.Integer("Number of bedrooms", default=2)
-	selling_price = fields.Monetary("Selling Price", readonly=True)
+	selling_price = fields.Float("Selling Price", readonly=True)
 	availability_date = fields.Datetime("Availability date")
