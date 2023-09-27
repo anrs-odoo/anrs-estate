@@ -5,13 +5,6 @@
             <field name="name">Properties</field>
             <field name="res_model">real_estate</field>
             <field name="view_mode">tree,form</field>
-            <field name="arch" type="xml">
-                <form string="Estate">
-                    <sheet>
-                        <field name="name"></field>
-                    </sheet>
-                </form>
-            </field>
         </record>
     </data>
 </odoo>
