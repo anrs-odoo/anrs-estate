@@ -11,3 +11,12 @@ class Estate(models.Model):
 	selling_price = fields.Float("Selling Price", readonly=True, copy=False)
 	availability_date = fields.Date("Availability date", default=lambda self: fields.datetime.today() + relativedelta(months=3),copy=False)
 	active = fields.Boolean(default=True)
+	state = fields.Selection(
+		selection=[
+			('new', "New"),
+			('offer_received', "Offer Received"),
+			('offer_accepted', "Offer Accepted"),
+			('sold', "Sold"),
+			('cancel', "Cancelled"),
+		],
+		string="Status", readonly=True, copy=False, tracking=3, default='new')
