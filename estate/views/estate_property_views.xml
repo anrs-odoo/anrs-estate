@@ -5,6 +5,7 @@
             <field name="name">Estate action</field>
             <field name="res_model">real_estate</field>
             <field name="view_mode">tree,form</field>
+            <field name="domain">[('name','=','test')]</field>
         </record>
     </data>
 </odoo>
